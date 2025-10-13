@@ -1,0 +1,708 @@
+@font-face {
+    font-family: ndot;
+    src: url(./font/Ndot-55-DoenNkNm.ttf);
+}
+
+@font-face {
+    font-family: NH;
+    src: url(./font/korataki-rg-3cf0d889-B6eTgmP5.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#leftnav {
+    position: relative;
+    padding: 15px 30px;
+}
+
+#leftnav h1 {
+    position: absolute;
+    color: white;
+    top: 35px;
+    left: 80px;
+    font-family: ndot;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+#leftnav img {
+    height: 100px;
+}
+
+#centernav {
+    position: relative;
+    padding: 30px 30px;
+}
+
+#centernav img {
+    height: 50px;
+}
+
+#centernav input {
+    position: absolute;
+    top: 45px;
+    left: 70px;
+    background: transparent;
+    font-size: 18px;
+    width: 200px;
+    color: white;
+    border: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+#centernav input::placeholder {
+    animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+#rightnav {
+    position: relative;
+    padding: 30px 30px;
+    display: flex;
+    gap: 30px;
+}
+
+#rightnav img {
+    height: 45px;
+}
+
+#rightnav h3 {
+    font-family: NH;
+    font-size: 11px;
+}
+
+#rightnav h3:nth-of-type(1) {
+    position: absolute;
+    color: white;
+    top: 42px;
+    left: 65px;
+}
+
+#rightnav h3:nth-of-type(2) {
+    position: absolute;
+    color: white;
+    top: 42px;
+    right: 215px;
+}
+
+#rightnav h3:nth-of-type(3) {
+    position: absolute;
+    color: white;
+    top: 42px;
+    right: 50px;
+}
+
+#lines1,
+#lines2,
+#lines3,
+#lines4,
+#lines5,
+#lines6,
+#lines7,
+#lines8,
+#lines9,
+#lines10,
+#lines11,
+#lines12,
+#lines13 {
+    position: absolute;
+    background: white;
+    height: 2px;
+    box-shadow: 0 0 10px white;
+}
+
+#lines1 {
+    width: 160px;
+    top: 150px;
+    left: 280px;
+    transform: rotate(35deg);
+}
+
+#lines2 {
+    width: 250px;
+    top: 196px;
+    left: 425px;
+}
+
+#lines3 {
+    width: 130px;
+    top: 228px;
+    left: 665px;
+    transform: rotate(30deg);
+}
+
+#lines4 {
+    width: 750px;
+    top: 260px;
+    left: 785px;
+}
+
+#lines5 {
+    width: 230px;
+    top: 255px;
+    left: 600px;
+    transform: rotate(30deg);
+}
+
+#lines6 {
+    width: 100px;
+    top: 313px;
+    left: 814px;
+}
+
+#lines7 {
+    width: 100px;
+    top: 348px;
+    left: 900px;
+    transform: rotate(45deg);
+}
+
+#lines8 {
+    width: 180px;
+    top: 384px;
+    left: 985px;
+}
+
+#lines9 {
+    width: 100px;
+    top: 341px;
+    left: 1140px;
+    transform: rotate(-60deg);
+}
+
+#lines10 {
+    width: 350px;
+    top: 298px;
+    left: 1215px;
+}
+
+#lines11 {
+    width: 700px;
+    top: 630px;
+}
+
+#lines12 {
+    width: 80px;
+    top: 607px;
+    left: 690px;
+    transform: rotate(-35deg);
+}
+
+#lines13 {
+    width: 1000px;
+    top: 585px;
+    left: 762px;
+}
+
+#headings h1 {
+    font-family: NH;
+    font-weight: 500;
+}
+
+#headings h1:nth-of-type(1) {
+    position: absolute;
+    top: 56%;
+    left: 6%;
+    color: #999d9c;
+    font-size: 45px;
+}
+
+#headings h1:nth-of-type(2) {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    color: #999d9c;
+    font-size: 45px;
+}
+
+#phones img {
+    height: 450px;
+}
+
+#phones img:nth-of-type(1) {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    transform: rotate(-32deg);
+}
+
+#phones img:nth-of-type(2) {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    transform: rotate(-32deg);
+}
+
+#subheading h4 {
+    position: absolute;
+    top: 85%;
+    left: 8%;
+    color: #e5e7eb;
+    font-family: ndot;
+    font-size: 20px;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+@media(max-width:767px) {
+    #leftnav {
+        padding-top: 15px;
+    }
+
+    #centernav {
+        display: none;
+    }
+
+    #rightnav {
+        display: none;
+    }
+
+    #mobilemenu {
+        position: relative;
+        display: block;
+        padding: 15px;
+    }
+
+    #mobilemenu img:nth-of-type(2) {
+        position: absolute;
+        top: 28px;
+        right: 32px;
+        height: 20px;
+    }
+
+    #leftnav img {
+        height: 50px;
+    }
+
+    #leftnav h1 {
+        top: 25px;
+        left: 65px;
+        font-size: 20px;
+    }
+
+    #lines1,
+    #lines2,
+    #lines3,
+    #lines4,
+    #lines5,
+    #lines6,
+    #lines7,
+    #lines8,
+    #lines9,
+    #lines10,
+    #lines11,
+    #lines12,
+    #lines13 {
+        display: none;
+    }
+
+    #headings h1:nth-of-type(1) {
+        top: 20%;
+        left: 10%;
+        font-size: 5vw;
+    }
+
+    #headings h1:nth-of-type(2) {
+        top: 25%;
+        left: 20%;
+        font-size: 5vw;
+    }
+
+    #phones img {
+        height: 200px;
+    }
+
+    #phones img:nth-of-type(1) {
+        top: 40%;
+        left: 35%;
+    }
+
+    #phones img:nth-of-type(2) {
+        top: 40%;
+        left: 42%;
+    }
+
+    #subheading h4 {
+        top: 85%;
+        left: 10%;
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #leftnav {
+        padding-top: 15px;
+    }
+
+    #centernav {
+        display: none;
+    }
+
+    #rightnav {
+        display: none;
+    }
+
+    #mobilemenu {
+        position: relative;
+        display: block;
+        padding: 15px;
+    }
+
+    #mobilemenu img:nth-of-type(2) {
+        position: absolute;
+        top: 28px;
+        right: 32px;
+        height: 20px;
+    }
+
+    #leftnav img {
+        height: 50px;
+    }
+
+    #leftnav h1 {
+        top: 25px;
+        left: 65px;
+        font-size: 20px;
+    }
+
+    #lines1,
+    #lines2,
+    #lines3,
+    #lines4,
+    #lines5,
+    #lines6,
+    #lines7,
+    #lines8,
+    #lines9,
+    #lines10,
+    #lines11,
+    #lines12,
+    #lines13 {
+        display: none;
+    }
+
+    #headings h1:nth-of-type(1) {
+        top: 20%;
+        left: 20%;
+        font-size: 4vw;
+    }
+
+    #headings h1:nth-of-type(2) {
+        top: 30%;
+        left: 25%;
+        font-size: 4vw;
+    }
+
+    #phones img {
+        height: 200px;
+    }
+
+    #phones img:nth-of-type(1) {
+        top: 40%;
+        left: 45%;
+    }
+
+    #phones img:nth-of-type(2) {
+        top: 40%;
+        left: 49%;
+    }
+
+    #subheading h4 {
+        top: 85%;
+        left: 20%;
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    #leftnav h1 {
+        top: 28px;
+        left: 54px;
+        font-size: 40px;
+    }
+
+    #leftnav img {
+        height: 70px;
+    }
+
+    #centernav img {
+        height: 40px;
+    }
+
+    #centernav input {
+        top: 40px;
+        left: 60px;
+    }
+
+    #headings h1:nth-of-type(1) {
+        font-size: 30px;
+    }
+
+    #headings h1:nth-of-type(2) {
+        font-size: 30px;
+    }
+
+    #phones img {
+        height: 350px;
+    }
+
+    #phones img:nth-of-type(1) {
+        left: 65%;
+    }
+
+    #phones img:nth-of-type(2) {
+        left: 70%;
+    }
+
+    #subheading h4 {
+        top: 80%;
+    }
+
+    #lines1 {
+        width: 160px;
+        top: 122px;
+        left: 200px;
+    }
+
+    #lines2 {
+        width: 110px;
+        top: 168px;
+        left: 345px;
+    }
+
+    #lines3 {
+        width: 130px;
+        top: 200px;
+        left: 445px;
+    }
+
+    #lines4 {
+        width: 460px;
+        top: 232px;
+        left: 565px;
+    }
+
+    #lines5 {
+        width: 230px;
+        top: 225px;
+        left: 370px;
+    }
+
+    #lines6 {
+        width: 100px;
+        top: 283px;
+        left: 585px;
+    }
+
+    #lines7 {
+        width: 100px;
+        top: 318px;
+        left: 670px;
+    }
+
+    #lines8 {
+        width: 100px;
+        top: 354px;
+        left: 755px;
+    }
+
+    #lines9 {
+        width: 80px;
+        top: 319px;
+        left: 834px;
+    }
+
+    #lines10 {
+        width: 140px;
+        top: 284px;
+        left: 894px;
+    }
+
+    #lines11 {
+        width: 500px;
+        top: 500px;
+    }
+
+    #lines12 {
+        width: 60px;
+        top: 483px;
+        left: 494px;
+    }
+
+    #lines13 {
+        width: 500px;
+        top: 466px;
+        left: 548px;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1440px) {
+    #leftnav h1 {
+        font-size: 48px;
+    }
+
+    #leftnav img {
+        height: 90px;
+    }
+
+    #headings h1:nth-of-type(1) {
+        font-size: 40px;
+    }
+
+    #headings h1:nth-of-type(2) {
+        font-size: 40px;
+    }
+
+    #phones img {
+        height: 420px;
+    }
+
+    #phones img:nth-of-type(1) {
+        left: 62%;
+    }
+
+    #phones img:nth-of-type(2) {
+        left: 67%;
+    }
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    #leftnav h1 {
+        font-size: 54px;
+        top: 35px;
+        left: 80px;
+    }
+
+    #leftnav img {
+        height: 100px;
+    }
+
+    #headings h1:nth-of-type(1) {
+        font-size: 45px;
+    }
+
+    #headings h1:nth-of-type(2) {
+        font-size: 45px;
+    }
+
+    #phones img {
+        height: 450px;
+    }
+
+    #lines4 {
+        width: 750px;
+    }
+
+    #lines10 {
+        width: 350px;
+    }
+
+    #lines11 {
+        width: 700px;
+    }
+
+    #lines13 {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width:1921px) {
+    #leftnav h1 {
+        font-size: 60px;
+        left: 90px;
+    }
+
+    #leftnav img {
+        height: 110px;
+    }
+
+    #headings h1:nth-of-type(1) {
+        font-size: 55px;
+        left: 8%;
+    }
+
+    #headings h1:nth-of-type(2) {
+        font-size: 55px;
+        left: 12%;
+    }
+
+    #phones img {
+        height: 500px;
+    }
+
+    #phones img:nth-of-type(1) {
+        left: 58%;
+    }
+
+    #phones img:nth-of-type(2) {
+        left: 63%;
+    }
+
+    #subheading h4 {
+        font-size: 24px;
+        left: 10%;
+    }
+
+    #lines1 {
+        width: 200px;
+        left: 320px;
+    }
+
+    #lines2 {
+        width: 300px;
+        left: 525px;
+    }
+
+    #lines4 {
+        width: 900px;
+        left: 885px;
+    }
+
+    #lines10 {
+        width: 450px;
+        left: 1315px;
+    }
+
+    #lines11 {
+        width: 900px;
+    }
+
+    #lines13 {
+        width: 1200px;
+        left: 862px;
+    }
+}

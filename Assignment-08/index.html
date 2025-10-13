@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AICREA - Advancing creativity with AI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <main id="main-layout">
+      <!--Header -->
+      <header class="top-header">
+        <div class="logo-wrapper">
+          <i class="ri-sparkling-fill logo-icon"></i>
+          <span class="brand-name">AICREA</span>
+        </div>
+
+        <nav class="navigation">
+          <a href="#" class="nav-link">Features</a>
+          <a href="#" class="nav-link">Pricing</a>
+          <a href="#" class="nav-link">Enterprise</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Community</a>
+        </nav>
+
+        <div class="header-buttons">
+          <a href="#" class="login-btn">Log In</a>
+          <a href="#" class="talk-btn">
+            LET'S TALK
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <button class="hamburger-menu" id="hamburger">
+          <i class="ri-menu-line"></i>
+        </button>
+      </header>
+
+      <!-- side Section -->
+      <section class="hero-section">
+        <div class="hero-top">
+          <div class="decorative-shape"></div>
+
+          <h1 class="main-heading">Advancing</h1>
+        </div>
+
+        <div class="hero-middle">
+          <h1 class="main-heading">creativity with</h1>
+        </div>
+
+        <div class="hero-bottom">
+          <h1 class="main-heading">artificial</h1>
+
+          <button class="work-video-btn">
+            <i class="ri-play-fill play-icon"></i>
+            HOW WE WORK
+          </button>
+        </div>
+
+        <h1 class="main-heading last-line">intelligence.</h1>
+
+        <div class="cta-group">
+          <a href="#" class="contact-btn">
+            CONTACT US
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+          <a href="#" class="call-request">request a call</a>
+        </div>
+
+        <p class="company-info">
+          Aicrea is an applied ai research company shaping the next era of art,
+          entertainment and human creativity.
+        </p>
+
+        <div class="partners">
+          <img src="./assets/tide.png" alt="Tide" class="partner-logo" />
+          <img
+            src="./assets/coinbase.png"
+            alt="Coinbase"
+            class="partner-logo"
+          />
+          <img src="./assets/etoro.png" alt="Etoro" class="partner-logo" />
+          <img src="./assets/chip.png" alt="Chip" class="partner-logo" />
+        </div>
+      </section>
+
+      <!-- Main Image -->
+      <figure class="main-image">
+        <img src="./assets/image1.jpg" alt="Holographic bubbles" />
+      </figure>
+
+      <!-- Bottom Left Image -->
+      <div id="bottom-left-img">
+        <img src="./assets/image2.jpg" alt="Digital art sculpture" />
+      </div>
+
+      <!-- Bottom Right Image -->
+      <div id="bottom-right-img">
+        <img src="./assets/image3.webp" alt="Abstract blue design" />
+      </div>
+    </main>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navigation = document.querySelector(".navigation");
+
+      hamburger.addEventListener("click", () => {
+        navigation.classList.toggle("active");
+        const icon = hamburger.querySelector("i");
+        if (navigation.classList.contains("active")) {
+          icon.classList.remove("ri-menu-line");
+          icon.classList.add("ri-close-line");
+        } else {
+          icon.classList.remove("ri-close-line");
+          icon.classList.add("ri-menu-line");
+        }
+      });
+    </script>
+  </body>
+</html>

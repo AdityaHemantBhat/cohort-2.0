@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Novatica;
+    src: url(./font/BC_Novatica_CYR_Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Novatica;
+    font-weight:600;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#maincont{
+    width: 100%;
+    height: 1000px;
+    background:linear-gradient(to right,rgb(175, 212, 224),rgb(240, 189, 197));
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 80px;
+}
+#logo h1{
+    color:#1b2733;
+}
+#logo h1 span{
+    color:white;
+}
+#logo img{
+    height:30px;
+    margin-left:5px;
+}
+#menu{
+    display: flex;
+    gap:80px;
+}
+#menu a{
+    color:#1b2733;
+    text-decoration: none;
+}
+#btn img{
+    height:25px;
+}
+#btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background: transparent;
+    padding:10px 60px;
+    border:1px solid #000;
+    border-radius: 15px;
+}
+#firstcomp {
+    position:absolute;
+    top:35%;
+    left:25%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#firstcomp .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#firstcomp img {
+    width: 40px;
+    height: auto;
+}
+
+#mainimg img {
+    height:850px;
+    width: auto;
+    position: absolute;
+    top:15%;
+    left: 18%;
+    z-index: 1;
+}
+#secondcomp {
+    position: absolute;
+    top:55%;
+    left:58%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+}
+#secondcomp .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#secondcomp img {
+    width: 40px;
+    height: auto;
+}
+#leftcont{
+    position: absolute;
+    top:55%;
+    left: 5%;
+}
+#leftcont img {
+    max-height: 100px; 
+    width: auto;
+    display: block; 
+}
+
+#leftcont h1{
+    font-size:80px;
+    line-height: 1;
+    color:#fff;
+}
+#headings h1.on-top {
+    position: relative;
+    z-index: 3;
+}
+#headings h1.on-bottom {
+    position: relative;
+    z-index: 0;
+}
+#rightcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:3%;
+    top:65%;
+    background-color: #ddd9d6;
+    border-radius: 15px;
+    padding: 20px 30px;
+    min-height: 350px;
+}
+#rightcont img{
+    height: 150px;
+}
+#rightcont h1{
+    font-size: 50px;
+    color: #2d3336;
+    margin-bottom: 10px;
+}
+
+#footer{
+    width:100%;
+    padding: 40px 50px;
+    background-color: #1d2a2e;
+    display: flex;
+    justify-content: space-between;
+}
+#footerimgs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#footerimgs h2{
+    color:#fff;
+    font-size: 30px;
+}
+#footerimgs img{
+    width:30px;
+    border-radius: 5px;
+    height: 30px;
+}
+#footer button{
+    padding:10px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+#bottombtn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+#footer button img{
+    height:15px;
+}
