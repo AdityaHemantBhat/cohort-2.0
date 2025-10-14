@@ -349,4 +349,113 @@ body {
     opacity: 0;
     transform: translateX(-100%);
   }
+}
+.speciality-container {
+  width: 100%;
+  position: relative;
+  background-color: #090f12;
+  padding: 150px;
+  z-index: 2;
+}
+.speciality-container::before, .speciality-container::after {
+  content: "";
+  position: absolute;
+  background-color: #c9b89a;
+  z-index: -1;
+}
+.speciality-container::before {
+  top: 0;
+  bottom: 0;
+  opacity: 0.1;
+  left: 400px;
+  width: 1px;
+}
+.speciality-container::after {
+  top: 0;
+  bottom: 0;
+  opacity: 0.1;
+  right: 1200px;
+  width: 1px;
+}
+.speciality-container .speciality-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.speciality-container .speciality-image img {
+  width: 600px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border: 1px solid rgba(113, 91, 62, 0.4);
+}
+.speciality-container .speciality-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.speciality-container .speciality-text::before, .speciality-container .speciality-text::after {
+  content: "";
+  position: absolute;
+  background-color: #c9b89a;
+  z-index: -1;
+}
+.speciality-container .speciality-text::before {
+  top: -220px;
+  bottom: -220px;
+  opacity: 0.1;
+  left: 50px;
+  width: 1px;
+}
+.speciality-container .speciality-text::after {
+  top: -220px;
+  bottom: -220px;
+  opacity: 0.1;
+  right: 100px;
+  width: 1px;
+}
+.speciality-container .speciality-text h6 {
+  font-family: "Miniver", cursive;
+  font-size: 16px;
+  color: #c9b89a;
+  letter-spacing: 3px;
+}
+.speciality-container .speciality-text h2 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 45px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.speciality-container .speciality-text p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  letter-spacing: 1px;
+  max-width: 600px;
+  text-align: center;
+}
+.speciality-container .speciality-text .view {
+  margin-top: 40px;
+  padding: 15px 40px;
+  border: 1px solid #c9b89a;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.speciality-container .speciality-text .view:hover {
+  background-color: #715b3e;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

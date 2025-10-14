@@ -44,7 +44,7 @@ body {
   width: 100%;
   background-color: #fff;
 }
-.hero-full-section{
+.hero-full-section {
   .full-main-border {
     position: relative;
     width: 100%;
@@ -73,13 +73,12 @@ body {
       right: 90px;
       width: 1px;
     }
-}
+  }
 }
 .hero-section {
   background: url("/assets/main-hero.jpg");
   background-position: center;
   background-size: cover;
-  
 
   .header {
     width: 100%;
@@ -336,7 +335,7 @@ body {
 
       p {
         margin-top: 30px;
-        color:rgb($white, 0.6) ;
+        color: rgb($white, 0.6);
         font-family: $font3;
         font-size: 25px;
         margin-bottom: 30px;
@@ -359,18 +358,18 @@ body {
         animation-delay: 8s;
       }
     }
-    }
   }
+}
 
-  .testimonial-image {
-    width: 60%;
+.testimonial-image {
+  width: 60%;
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
+}
 
 @keyframes slideTestimonial {
   0% {
@@ -396,5 +395,123 @@ body {
   100% {
     opacity: 0;
     transform: translateX(-100%);
+  }
+}
+
+.speciality-container {
+  width: 100%;
+  position: relative;
+  background-color: $dark-green;
+  padding: 150px;
+  z-index: 2;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $light-brown;
+    z-index: -1;
+  }
+  &::before {
+    top: 0;
+    bottom: 0;
+    opacity: 0.1;
+    left: 400px;
+    width: 1px;
+  }
+
+  &::after {
+    top: 0;
+    bottom: 0;
+    opacity: 0.1;
+    right: 1200px;
+    width: 1px;
+  }
+  .speciality-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+  }
+  .speciality-image {
+    img {
+      width: 600px;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      border: 1px solid rgba($dark-brown, 0.4);
+    }
+  }
+  .speciality-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $light-brown;
+        z-index: -1;
+      }
+      &::before {
+        top: -220px;
+        bottom: -220px;
+        opacity: 0.1;
+        left: 50px;
+        width: 1px;
+      }
+
+      &::after {
+        top: -220px;
+        bottom: -220px;
+        opacity: 0.1;
+        right: 100px;
+        width: 1px;
+      }
+
+    h6 {
+      font-family: $font3;
+      font-size: 16px;
+      color: $light-brown;
+      letter-spacing: 3px;
+    }
+    h2 {
+      font-family: $font5;
+      font-size: 45px;
+      color: $light-brown;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+    p {
+      font-family: $font4;
+      font-size: 18px;
+      color: rgb($white, 0.8);
+      line-height: 1.8;
+      letter-spacing: 1px;
+      max-width: 600px;
+      text-align: center;
+      
+    }
+    .view {
+      margin-top: 40px;
+      padding: 15px 40px;
+      border: 1px solid $light-brown;
+      background-color: transparent;
+      color: $white;
+      font-family: $font1;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      cursor: pointer;
+      transition: all 0.3s ea
+
+      &:hover {
+        background-color: $dark-brown;
+        color: $white;
+      }
+    }
   }
 }
