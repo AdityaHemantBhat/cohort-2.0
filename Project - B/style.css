@@ -31,7 +31,7 @@ body {
 }
 
 .main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #fff;
 }
@@ -458,4 +458,452 @@ body {
 .speciality-container .speciality-text .view:hover {
   background-color: #715b3e;
   color: #ffffff;
+}
+
+.menu-section {
+  width: 100%;
+  background-color: #0f1d22;
+  padding: 100px 0;
+}
+.menu-section .menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.menu-section .menu-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.menu-section .menu-header h6 {
+  font-family: "Miniver", cursive;
+  font-size: 18px;
+  color: #c9b89a;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.menu-section .menu-header h2 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 45px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.menu-section .menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+.menu-section .menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menu-section .menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(201, 184, 154, 0.2);
+}
+.menu-section .menu-item .item-info {
+  flex: 1;
+}
+.menu-section .menu-item .item-info h3 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 20px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.menu-section .menu-item .item-info p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+.menu-section .menu-item .item-price {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 24px;
+  color: #c9b89a;
+  margin-left: 20px;
+}
+.menu-section .menu-btn {
+  text-align: center;
+}
+.menu-section .menu-btn .view {
+  padding: 15px 40px;
+  border: 1px solid #c9b89a;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu-section .menu-btn .view:hover {
+  background-color: #715b3e;
+  color: #ffffff;
+}
+
+.tips-section {
+  width: 100%;
+  background-color: #090f12;
+  padding: 100px 0;
+}
+.tips-section .tips-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 0 20px;
+}
+.tips-section .tips-content {
+  flex: 1;
+}
+.tips-section .tips-content h6 {
+  font-family: "Miniver", cursive;
+  font-size: 18px;
+  color: #c9b89a;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.tips-section .tips-content h2 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 45px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+}
+.tips-section .tips-content p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.tips-section .tips-content .view {
+  padding: 15px 40px;
+  border: 1px solid #c9b89a;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tips-section .tips-content .view:hover {
+  background-color: #715b3e;
+  color: #ffffff;
+}
+.tips-section .tips-image {
+  flex: 1;
+}
+.tips-section .tips-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.offer-section {
+  width: 100%;
+  background-color: #0f1d22;
+  padding: 100px 0;
+}
+.offer-section .offer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.offer-section .offer-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.offer-section .offer-header h6 {
+  font-family: "Miniver", cursive;
+  font-size: 18px;
+  color: #c9b89a;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.offer-section .offer-header h2 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 45px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.offer-section .offer-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.offer-section .offer-tabs .tab {
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 16px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.offer-section .offer-tabs .tab.active {
+  border-bottom: 2px solid #c9b89a;
+}
+.offer-section .offer-tabs .tab:hover {
+  color: #ffffff;
+}
+.offer-section .offer-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.offer-section .offer-item {
+  text-align: center;
+  padding: 30px 20px;
+  border: 1px solid rgba(201, 184, 154, 0.3);
+  transition: all 0.3s ease;
+}
+.offer-section .offer-item:hover {
+  border-color: #c9b89a;
+  transform: translateY(-5px);
+}
+.offer-section .offer-item h3 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 18px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.offer-section .offer-item p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.offer-section .offer-item span {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 20px;
+  color: #c9b89a;
+}
+
+.reservation-section {
+  width: 100%;
+  background: url("./assets/main-background-5.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+}
+.reservation-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(9, 15, 18, 0.8);
+}
+.reservation-section .reservation-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+.reservation-section .reservation-container h2 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 45px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+}
+.reservation-section .reservation-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.reservation-section .reservation-form .form-group select,
+.reservation-section .reservation-form .form-group input {
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 1px solid #c9b89a;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  min-width: 180px;
+}
+.reservation-section .reservation-form .form-group select option,
+.reservation-section .reservation-form .form-group input option {
+  background-color: #090f12;
+}
+.reservation-section .reservation-form .reservation-btn {
+  padding: 15px 40px;
+  border: 1px solid #c9b89a;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reservation-section .reservation-form .reservation-btn:hover {
+  background-color: #715b3e;
+  color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  background-color: #090f12;
+  padding: 60px 0 30px;
+}
+.footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.footer .footer-info h3 {
+  font-family: "Caviar Dreams", sans-serif;
+  font-size: 24px;
+  color: #c9b89a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+.footer .footer-info p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.footer .footer-info p.open-hours {
+  margin-top: 20px;
+  color: #c9b89a;
+}
+.footer .footer-social {
+  display: flex;
+  gap: 20px;
+}
+.footer .footer-social a {
+  border: 1px solid #c9b89a;
+  border-radius: 50%;
+  padding: 15px;
+  text-decoration: none;
+}
+.footer .footer-social i {
+  transition: all 0.3s ease;
+  color: #c9b89a;
+  font-size: 30px;
+}
+.footer .footer-social i:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .hero-container .big-text h1 {
+    font-size: 100px;
+  }
+  .speciality-container {
+    padding: 100px 50px;
+  }
+  .speciality-main {
+    gap: 80px;
+  }
+  .speciality-image img {
+    width: 500px;
+  }
+  .offer-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .hero-container .big-text h1 {
+    font-size: 80px;
+  }
+  .navigation {
+    display: none !important;
+  }
+  .about-images {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .about-image {
+    height: 400px !important;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
+  .testimonial-content,
+  .testimonial-image {
+    width: 100% !important;
+  }
+  .speciality-main {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .menu-items {
+    grid-template-columns: 1fr !important;
+  }
+  .tips-container {
+    flex-direction: column;
+    gap: 50px !important;
+  }
+  .offer-items {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .reservation-form {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero-container .big-text h1 {
+    font-size: 60px;
+  }
+  .hero-container .big-text {
+    gap: 20px !important;
+  }
+  .passion h4 {
+    font-size: 20px !important;
+  }
+  .about-section::before,
+  .about-section::after {
+    display: none;
+  }
+  .speciality-container {
+    padding: 80px 20px;
+  }
+  .speciality-image img {
+    width: 100%;
+  }
+  .offer-items {
+    grid-template-columns: 1fr !important;
+  }
 }/*# sourceMappingURL=style.css.map */
