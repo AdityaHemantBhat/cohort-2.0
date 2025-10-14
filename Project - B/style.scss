@@ -506,7 +506,7 @@ body {
       text-transform: uppercase;
       letter-spacing: 5px;
       cursor: pointer;
-      transition: all 0.3s ea
+      transition: all 0.3s ease;
 
       &:hover {
         background-color: $dark-brown;
