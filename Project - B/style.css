@@ -107,7 +107,7 @@ body {
   text-align: center;
 }
 .hero-section .hero-container h5 {
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 16px;
   color: #c9b89a;
   letter-spacing: 5px;
@@ -202,7 +202,7 @@ body {
   padding: 0 40px;
 }
 .about-section .about-container .about-content .about-text h6 {
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 18px;
   color: #c9b89a;
   letter-spacing: 3px;
@@ -299,7 +299,7 @@ body {
 .testimonial-container .testimonial-content .testimonial-text p {
   margin-top: 30px;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 25px;
   margin-bottom: 30px;
 }
@@ -420,7 +420,7 @@ body {
   width: 1px;
 }
 .speciality-container .speciality-text h6 {
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 16px;
   color: #c9b89a;
   letter-spacing: 3px;
@@ -475,7 +475,7 @@ body {
   margin-bottom: 60px;
 }
 .menu-section .menu-header h6 {
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 18px;
   color: #c9b89a;
   letter-spacing: 3px;
@@ -566,7 +566,7 @@ body {
   flex: 1;
 }
 .tips-section .tips-content h6 {
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 18px;
   color: #c9b89a;
   letter-spacing: 3px;
@@ -628,7 +628,7 @@ body {
   margin-bottom: 60px;
 }
 .offer-section .offer-header h6 {
-  font-family: "Miniver", cursive;
+  font-family: "Miniver";
   font-size: 18px;
   color: #c9b89a;
   letter-spacing: 3px;
